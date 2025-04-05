@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# MLflow artifacts
+mlruns/
+
+# Model checkpoints
+models/
+*.pkl
+*.joblib
+
+# Data
+data/
+dataset/M5 forecasting accuracy/*.csv
+postprocessing/
+
+# OS files
+.DS_Store
+
+# Logs
+logs/
+*.log

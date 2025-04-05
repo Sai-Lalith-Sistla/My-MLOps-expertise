@@ -1,0 +1,8 @@
+# 📂 Dataset Placement Instructions
+
+Please download the following datasets from the [M5 Forecasting Accuracy Kaggle competition](https://www.kaggle.com/competitions/m5-forecasting-accuracy/data):
+
+1. `sales_train_evaluation.csv`
+2. `sales_train_validation.csv`
+
+After downloading, **place them in the following directory structure** relative to the Data engineering notebook
