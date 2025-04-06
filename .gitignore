@@ -19,8 +19,10 @@ models/
 *.joblib
 
 # Data
-data/
-dataset/M5 forecasting accuracy/*.csv
+data/raw/*.csv
+data/processed/
+data/inference/
+
 postprocessing/
 
 # OS files
