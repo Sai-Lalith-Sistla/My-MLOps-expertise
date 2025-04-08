@@ -1,6 +1,6 @@
 experiment_name: "time_series_xgboost"
 model_params:
-  n_estimators: 100
+  num_boost_round: 100
   max_depth: 5
   learning_rate: 0.1
   objective: "reg:squarederror"
@@ -14,6 +14,6 @@ features:
   - rolling_mean_7
   - rolling_mean_14
 target: sales
-data_path: "data/final_sales_data"
+data_path: "data/processed/final_sales_data_val"
 data_format: "parquet"
-model_output_path: "models/baseline_xgb_model.pkl"
+model_output_path: "models/baseline_xgb_pd_model.pkl"

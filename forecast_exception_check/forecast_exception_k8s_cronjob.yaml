@@ -1,0 +1,32 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: forecast-exception-check
+spec:
+  schedule: "0 9 * * *"    # Every day at 9 AM UTC (adjust as needed)
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: forecast-exception
+            image: your-dockerhub-username/forecast-exception:latest  # Replace with your built Docker image
+            imagePullPolicy: Always
+            env:
+            - name: SMTP_SERVER
+              value: "smtp.gmail.com"
+            - name: SMTP_PORT
+              value: "587"
+            - name: SMTP_USER
+              valueFrom:
+                secretKeyRef:
+                  name: email-credentials
+                  key: smtp_user
+            - name: SMTP_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: email-credentials
+                  key: smtp_password
+            - name: TO_EMAILS
+              value: "recipient@example.com"
+          restartPolicy: OnFailure

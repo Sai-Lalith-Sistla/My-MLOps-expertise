@@ -1,5 +1,18 @@
 # 🛠️ MLOps POC - End-to-End Retail Forecasting
 
+
+## 🚀 Tools & Skills Displayed
+
+- **Python** (`Pandas`, `Dask`, `NumPy`)
+- **MLOps** (`MLflow`, `Experiment Tracking`, `Metric Comparison`)
+- **Machine Learning** (`LightGBM`, `Random Forests`)
+- **Data Engineering** (Scalable Pipelines, Feature Engineering, Memory Optimization)
+- **Time Series Forecasting** (Lag Features, Temporal Data Handling)
+- **API Deployment** (`Flask` / `FastAPI` — upcoming in Day 3)
+- **Model Monitoring** (Performance Tracking, Retraining Automation — upcoming)
+- **Cloud-Ready Architecture** (Modular, Scalable Design)
+
+
 ## 📈 High-Level Workflow
 
 1️⃣ **Data Ingestion → Preprocessing → Feature Engineering → Data Quality Report**  
@@ -38,7 +51,27 @@ Designed a **robust and scalable data pipeline** that transforms complex retail 
 
 ---
 
+## 🤖 Model Training & Experiment Tracking
 
+### Summary
+Built a **modular, extensible training framework** capable of handling multiple model families.  
+Integrated **MLflow** for seamless experiment tracking, ensuring traceability, reproducibility, and informed decision-making.
+
+### Key Steps
+- **Baseline Model Development:**  
+  Developed a **LightGBM Regressor** as the baseline model for initial performance benchmarking.
+
+- **Experiment Tracking with MLflow:**  
+  Logged **parameters**, **metrics** (like RMSE), **feature importance**, and **model artifacts** for each experiment run.
+
+- **Hyperparameter Variations:**  
+  Trained multiple model versions with different hyperparameter settings to observe their impact on performance.
+
+- **Metric Comparison:**  
+  Compared all experiments using MLflow’s tracking UI, enabling **easy identification of top-performing models**.
+
+- **Reproducibility:**  
+  Ensured that every run can be **replicated** with tracked inputs, outputs, and model versions.
 
 ---
 ## 📂 Dataset Instructions
