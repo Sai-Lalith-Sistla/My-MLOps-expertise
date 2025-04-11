@@ -1,6 +1,6 @@
 # Champion vs Challenger Strategy - Forecast Automation POC
 
-Overview - Architecture - Technologies - Challenges (with solutions)
+Overview - Architecture - Technologies - [Challenge #1](https://github.com/Sai-Lalith-Sistla/My-MLOps-expertise/blob/main/01_Champion%20vs%20challenger%20strategy.md#challenging-scenario-1)
 
 ## Overview
 This module implements a **Champion vs Challenger** model evaluation strategy to enhance the robustness and adaptability of the Forecast Automation system.
