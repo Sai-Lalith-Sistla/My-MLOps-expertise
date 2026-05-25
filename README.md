@@ -8,7 +8,7 @@
 - **Machine Learning** (`LightGBM`, `Random Forests`)
 - **Data Engineering** (Scalable Pipelines, Feature Engineering, Memory Optimization)
 - **Time Series Forecasting** (Lag Features, Temporal Data Handling)
-- **API Deployment** (`Flask` / `FastAPI` — upcoming in Day 3)
+- **API Deployment** (`Flask` / `FastAPI`)
 - **Model Monitoring** (Performance Tracking, Retraining Automation — upcoming)
 - **Cloud-Ready Architecture** (Modular, Scalable Design)
 
