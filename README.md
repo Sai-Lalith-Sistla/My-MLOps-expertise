@@ -49,6 +49,11 @@ Designed a **robust and scalable data pipeline** that transforms complex retail 
 - **Scalability & Modularity:**  
   Architected the pipeline for **easy scaling** and **modular integration** with downstream ML workflows.
 
+- **Data Quality Reporting:**  
+  profiling, validation rules, Anomaly detection, report generation
+
+
+
 ---
 
 ## 🤖 Model Training & Experiment Tracking
@@ -58,8 +63,8 @@ Built a **modular, extensible training framework** capable of handling multiple 
 Integrated **MLflow** for seamless experiment tracking, ensuring traceability, reproducibility, and informed decision-making.
 
 ### Key Steps
-- **Baseline Model Development:**  
-  Developed a **LightGBM Regressor** as the baseline model for initial performance benchmarking.
+### Baseline Model Development:**  
+  Developed a **XGBoost & LightGBM Regressor** as the baseline model for initial performance benchmarking.
 
 - **Experiment Tracking with MLflow:**  
   Logged **parameters**, **metrics** (like RMSE), **feature importance**, and **model artifacts** for each experiment run.
@@ -72,6 +77,61 @@ Integrated **MLflow** for seamless experiment tracking, ensuring traceability, r
 
 - **Reproducibility:**  
   Ensured that every run can be **replicated** with tracked inputs, outputs, and model versions.
+
+---
+
+## 📈 Model Monitoring & Retraining 
+### Summary
+Planned a future-ready model monitoring system to ensure ongoing model health and proactive maintenance.
+
+### Key Points
+- **Inference Drift Detection:**  
+  Monitor input features for distribution shifts over time.
+
+- **Performance Monitoring:**  
+  Continuously track live RMSE / MAE against validation benchmarks.
+
+- **Automated Retraining:**  
+  Design a cron-based retraining script that triggers upon drift detection or performance degradation.
+
+- **Alerting System:**  
+  Integrate Slack/email alerts for critical monitoring events.
+
+---
+# 🏆 Champion vs Challenger Strategy
+
+## Summary
+Implemented an automated model selection system where trained models compete based on evaluation metrics. The **Champion Model** is the best-performing model at any point in time.
+
+## Key Steps
+- **Training Phase**: Multiple models trained and evaluated.
+- **Comparison**: Validation RMSE or custom KPIs compared.
+- **Champion Selection**: Model with best metric registered as "Production Ready".
+- **Challenger Evaluation**: New models evaluated periodically to dethrone Champion if they outperform.
+- **Automation**: Comparison and registry operations fully automated.
+
+## Why Important?
+- Guarantees only best models serve in production.
+- Enables continuous learning and model improvement.
+
+---
+
+# 📋 Forecast Exception Reporting
+
+## Summary
+Established a **Forecast Exception Report** system that continuously monitors model predictions versus actuals, detecting performance drifts.
+
+## Key Steps
+- **Actual vs Predicted Comparisons** performed daily/weekly.
+- **Thresholds Defined**: Example - if error > 10% consistently.
+- **Report Generation**: Summary of exceptions and drift.
+- **Notifications**: Email alerts triggered if exceptions exceed thresholds.
+- **Automated Action**: Initiates retraining pipelines when performance falls below acceptable standards.
+
+## Benefits
+- Early detection of model degradation.
+- Automated triggers for retraining to maintain accuracy.
+- Transparent documentation for auditability.
 
 ---
 ## 📂 Dataset Instructions

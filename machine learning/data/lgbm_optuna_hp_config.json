@@ -1,0 +1,13 @@
+{
+    "max_depth": 3,
+    "learning_rate": 0.18675668470684365,
+    "bagging_fraction": 0.6625555281957588,
+    "feature_fraction": 0.9357522851803579,
+    "lambda_l1": 1.256407659451954,
+    "lambda_l2": 9.973210711345272,
+    "num_leaves": 98,
+    "min_child_samples": 11,
+    "min_child_weight": 7.8191653235565495,
+    "max_bin": 336,
+    "alpha": 0.001014166709932626
+}

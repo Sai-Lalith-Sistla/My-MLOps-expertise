@@ -1,0 +1,33 @@
+[ Raw Data Ingestion ]
+       │  
+       ▼  
+[ Preprocessing & Feature Engineering ]  ---> [ Data Quality Report (CSV) ]  
+       │  
+       ▼  
+[ Train Models (ARIMA, LightGBM, LSTM/GRU - PyTorch) ]  
+       │  
+       ▼  
+[ Log Experiments in MLFlow (Hyperparams, WAPE, BIAS, RMSE) ]  
+       │  
+       ▼  
+[ Champion vs. Challenger Selection ]  
+    │        │  
+    │        ▼  
+    │   [ Forecast Exception Report ]  
+    ▼  
+[ Best Model Selection ]  
+       │  
+       ▼  
+[ Containerize Model (Docker + ACR) ]  
+       │  
+       ▼  
+[ Deploy via FastAPI + Kubernetes ]  
+       │  
+       ▼  
+[ Monitor Performance (MLFlow Dashboard) ]  
+       │  
+       ▼  
+[ Alerts if Accuracy Drops ] ---> [ Retrain Model if Needed ]  
+       │  
+       ▼  
+[ SOP for Adding Models, Deploying to Dev/Prod ]  
